@@ -1,29 +1,29 @@
-import Router from './Router'
-import Auth from './Auth'
-import Toast from './Toast'
-
+import Router from "./Router";
+import Auth from "./Auth";
+import Toast from "./Toast";
 
 class App {
-  constructor(){
-    this.name = "DCB Booking"
-    this.version = "1.1.0"
-    this.apiBase = 'http://localhost:3000'
-    this.rootEl = document.getElementById("root")
-    this.version = "1.1.0"
+  constructor() {
+    this.name = "DCB Booking";
+    this.version = "1.1.0";
+    //this.apiBase = 'http://localhost:3000'
+    this.apiBase = " https://mhayes-dcb-backend.herokuapp.com/";
+    this.rootEl = document.getElementById("root");
+    this.version = "1.1.0";
   }
-  
-  init() { 
-    console.log("App.init")
-    
+
+  init() {
+    console.log("App.init");
+
     // Toast init
-    Toast.init()   
-    
-    // Authentication check    
+    Toast.init();
+
+    // Authentication check
     Auth.check(() => {
       // authenticated! init Router
-      Router.init()
-    })    
+      Router.init();
+    });
   }
 }
 
-export default new App()
+export default new App();

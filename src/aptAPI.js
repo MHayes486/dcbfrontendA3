@@ -1,6 +1,6 @@
 import App from "./App";
 
-class AptAPI {
+class aptAPI {
   async getApts() {
     // fetch the json data
     const response = await fetch(`${App.apiBase}/appointment`, {
@@ -49,9 +49,9 @@ class AptAPI {
     return data;
   }
 
-  async updateApt(appointmentId){
-  // validate
-    if(!appointmentId) return
+  async updateApt(appointmentId) {
+    // validate
+    if (!appointmentId) return;
 
     // fetch the json data
     const response = await fetch(`${App.apiBase}/appointment/bookApt`, {
@@ -64,22 +64,20 @@ class AptAPI {
     });
 
     // if response not ok
-    if(!response.ok){ 
+    if (!response.ok) {
       // console log error
-      const err = await response.json()
-      if(err) console.log(err)
-      // throw error (exit this function)      
-      throw new Error('Problem booking')
+      const err = await response.json();
+      if (err) console.log(err);
+      // throw error (exit this function)
+      throw new Error("Problem booking");
     }
-    
+
     // convert response payload into json - store as data
-    const data = await response.json()
-    
+    const data = await response.json();
+
     // return data
-    return data
-
+    return data;
   }
-
 }
 
 export default new AptAPI();

@@ -2,7 +2,7 @@ import App from "./../../App";
 import { html, render } from "lit-html";
 import Auth from "./../../Auth";
 import Utils from "./../../Utils";
-import aptAPI from "../../AptAPI";
+import aptAPI from "../../aptAPI";
 import Toast from "../../Toast";
 
 class newAptView {
