@@ -1,0 +1,77 @@
+// Vars
+
+:root {
+  // base
+  --base-txt-color: #000;
+    --base-bg-color:#f1f1f1;
+  --base-font-family: 'Merriweather', serif;
+  --base-heading-font-family: 'Poppins', sans-serif;
+  --base-highlight-bg-color: #184D66;
+  --base-highlight-txt-color: #30DAFC;;
+
+  //links
+  --base-link-color: #b08010;
+  --base-link-font-family:'Poppins', sans-serif;
+  --base-link-font-size: 0.8rem;
+
+  //heading
+  --dcb-font-family: 'Black Ops One', cursive;
+  --heading-font-family: 'Poppins', sans-serif;
+  --heading-txt-color: #184D66;
+  --heading-bg-color: #30DAFC;
+
+  //buttons
+  --base-btn-color: #309AFC;
+  --base-btn-font-family: 'Poppins', sans-serif;
+  --base-btn-txt-color: #FFF;
+
+
+      //card details
+  --card-heading-color: #7EC8EA;
+  --card-heading-font-family: 'Poppins', sans-serif;
+  --card-subheading-color: #30DAFC;
+    --card-subheading-font-family: 'Merriweather', serif;
+  --card-body-bg-color: #184D66;
+
+    //card form details
+    --card-field-txt-color: #000;
+    --card-field-font-family: 'Libre Baskerville', serif;
+    --card-field-bg-color: #f0f0f0;
+    --card-bg-bg-color: #a5b8b8;
+
+    //card button details
+    --card-btn-txt-color: #fff;
+    --card-btn-bg-color: #B08010;
+    --card-btn-font-family: 'Merriweather', serif;
+
+     // colors  
+  $brand-color: #309AFC;
+  --brand-color: #{$brand-color};
+    $brand-color-light: #30DAFC;
+  --brand-color-light: #{$brand-color-light};
+      $brand-color-dark: #184D66;
+  --brand-color-dark: #{$brand-color-dark};
+
+
+  // --link-color: --brand-color;
+  
+  // app header
+  --app-header-height: 60px;
+  --app-header-txt-color: #fff;
+  --app-header-title-font-size: 1.6em;
+
+  // shoelace tokens
+  // full list here:
+  // https://github.com/shoelace-style/shoelace/blob/current/src/styles/base.scss
+  --sl-color-primary-50: #{lighten($brand-color-light, 60%)};
+  --sl-color-primary-100: #{lighten($brand-color-light, 30%)};
+  --sl-color-primary-200: #{$brand-color-light};
+  --sl-color-primary-300: #{lighten($brand-color, 30%)};
+  --sl-color-primary-400: #{lighten($brand-color, 15%)};
+  --sl-color-primary-500: #{$brand-color};
+  --sl-color-primary-600: #{darken($brand-color, 15%)};
+  --sl-color-primary-700: #{darken($brand-color, 30%)};
+  --sl-color-primary-800: #{$brand-color-dark};
+  --sl-color-primary-900: #{darken($brand-color-dark, 15%)};
+  --sl-focus-ring-color-primary: #{rgba($brand-color, 0.1)};
+}

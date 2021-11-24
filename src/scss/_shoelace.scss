@@ -1,0 +1,60 @@
+// Shoelace
+
+// sl-dialog
+sl-dialog::part(title){
+  font-weight: 500;
+  font-size: 1.6em;
+}
+
+sl-button{
+    background-color: var(--card-btn-bg-color);
+    color: var(--card-btn-txt-color);
+    font-family: var(--card-btn-font-family);
+    border-radius: 8px;
+    padding: 5px;
+}
+
+.details__header{
+      font-family: var(--heading-font-family);
+    color: var(--heading-txt-color);
+    background-color: var( --heading-bg-color);
+}
+.appointmentDetails{
+    font-family: var(--heading-font-family);
+    color: var(--heading-txt-color);
+    background-color: var(--base-btn-color);
+    size: 1.4rem;
+    font-weight: 700;
+    border: 3px solid var(  --base-highlight-bg-color);
+    
+    ol{
+    font-family: var(--heading-font-family);
+    color: var(--heading-txt-color);
+    background-color: var(--heading-bg-color);
+    
+    }
+    li{
+      font-family: (--base-font-family);
+      padding-top: 5px;
+      size: 1.2rem;
+      font-weight: 400;
+    }
+}
+
+.aptsPtsDetails{
+    font-family: var(--base-font-family);
+    color: var(--base-btn-txt-color);
+    background-color: var(--base-link-color);
+}
+
+
+// RESPONSIVE - MOBILE -------------------
+@media all and (max-width: 768px){ 
+
+  sl-dialog::part(panel) {
+    width: 100%;
+    height: 100%;
+    max-height: none;
+    max-width: none;
+  }
+}
